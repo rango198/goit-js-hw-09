@@ -12,9 +12,9 @@ refs.formId.addEventListener('click', onPromiseCreate);
 function onPromiseCreate(e) {
   e.preventDefault();
   const { delay, step, amount } = e.currentTarget.elements;
-  let inputDelay = Number(delay.value);
-  let inputStep = Number(step.value);
-  let inputAmount = Number(amount.value);
+  let inputDelay = Number(refs.delayId.value);
+  let inputStep = Number(refs.stepId.value);
+  let inputAmount = Number(refs.amountId.value);
 
   for (let i = 1; i <= inputAmount; i += 1) {
     inputDelay += inputStep;
